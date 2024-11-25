@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 export default function Proxy() {
   useEffect(() => {
-    // 自動でGoogleにリダイレクト
+    // Googleへリダイレクト
     window.location.href = '/api/google-proxy';
   }, []);
 
