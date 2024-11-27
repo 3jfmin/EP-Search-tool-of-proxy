@@ -2,12 +2,8 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/youtube/:path*',
-        destination: '/api/youtube-proxy/:path*', // YouTubeプロキシ
-      },
-      {
-        source: '/:path*',
-        destination: '/api/google-proxy/:path*', // Googleプロキシ
+        source: '/yt/:path*', // `/yt`でYouTubeプロキシにアクセス
+        destination: '/api/unblock-youtube/:path*',
       },
     ];
   },
