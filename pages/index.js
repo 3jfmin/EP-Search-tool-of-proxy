@@ -4,7 +4,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleAgreement = () => {
-    router.push('/proxy');
+    router.push('/'); // ホームから直接Googleへプロキシ
   };
 
   return (
