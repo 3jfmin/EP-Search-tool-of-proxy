@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 export default function YouTubeProxy() {
   useEffect(() => {
-    // YouTubeプロキシを通じて表示
-    window.location.href = '/youtube';
+    // YouTubeプロキシ経由でロード
+    window.location.href = '/yt';
   }, []);
 
   return (
